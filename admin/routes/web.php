@@ -12,4 +12,14 @@
 */
 
 Route::get('/','HomeController@HomeIndex');
+
 Route::get('/visitor','VisitorController@VisitorIndex');
+
+
+
+Route::get('/courses', 'CoursesController@CoursesIndex');
+Route::get('/getCoursesData', 'CoursesController@getCoursesData');
+Route::post('/CoursesDelete', 'CoursesController@CoursesDelete');
+Route::post('/CoursesDetails', 'CoursesController@getCoursesDetails');
+Route::post('/CoursesUpdate', 'CoursesController@CoursesUpdate');
+Route::post('/CoursesAdd', 'CoursesController@CoursesAdd');
