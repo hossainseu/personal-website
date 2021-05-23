@@ -1,7 +1,6 @@
 @extends('Layout.app')
 @section('content')
 
-
-
-<h1>Course</h1>
+@include('component.CourseTopBanner')
+@include('component.AllCourse')
 @endsection
